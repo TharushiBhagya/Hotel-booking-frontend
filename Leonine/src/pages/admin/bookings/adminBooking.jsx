@@ -66,56 +66,45 @@ const bookings = [
     },
 ];
 
-
 export default function AdminBooking() {
     return (
         <div className="w-full p-6 bg-gray-50">
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white border-separate border-spacing-0 shadow-lg rounded-lg">
                     <thead>
-                        <tr className="bg-gradient-to-r from-green-400 to-blue-500 text-white text-left rounded-t-lg">
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Booking ID</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Room ID</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Email</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Guest Phone</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Check-In Date</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Check-Out Date</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Total Price ($)</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Booking Status</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Reason</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Notes</th>
-                            <th className="px-6 py-3 border-b border-gray-200 shadow-inner">Timestamp</th>
+                        <tr className="bg-[#10375C] text-white text-left rounded-t-lg">
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Booking ID</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Room ID</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Email</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Guest Phone</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Check-In Date</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Check-Out Date</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Total Price ($)</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Booking Status</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Reason</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Notes</th>
+                            <th className="px-6 py-3 border-b border-[#001F3F]">Timestamp</th>
                         </tr>
                     </thead>
-                  <tbody>
-                    {
-                        bookings.map((booking,index)=>{
-                           return (
-                            <tr key={index} >
-                                <td>
-                                    {booking.bookingId}
-                                </td>
-                                <td>
-                                    {booking.email}
-                                </td>
-                                <td>
-                                    {booking.checkInDate}
-                                </td>
-                                <td>
-                                    {booking.checkOutDate}
-                                </td>
-                                <td>
-                                    {booking.bookingStatus}
-                                </td>
-                                <td>
-                                    {booking.reason}
-                                </td>
-                            </tr>
-                           )
-                        } )
-                    }
-                  </tbody>
-                  
+                    <tbody>
+                        {bookings.map((booking, index) => {
+                            return (
+                                <tr key={index} className="bg-[#F4F6FF] hover:bg-[#F3C623] transition-colors duration-300">
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.bookingId}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.roomId}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.email}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.guestPhone}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.checkInDate}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.checkOutDate}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">${booking.totalPrice}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#EB8317] font-semibold">{booking.bookingStatus}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.reason}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{booking.notes}</td>
+                                    <td className="px-6 py-3 border-b border-[#001F3F] text-[#10375C]">{new Date(booking.timestamp).toLocaleString()}</td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
                 </table>
             </div>
         </div>
