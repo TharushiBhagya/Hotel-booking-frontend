@@ -3,49 +3,49 @@ import React from 'react';
 const hotelServiceData = [
     {
         name: 'Free Wi-Fi',
-        image: '/images/wifi.jpg', // Update with your image path
+        image: '/images/wifi.jpg', 
         description: 'Enjoy high-speed Wi-Fi access throughout the hotel, available for all guests.',
         features: ['High-Speed Internet', 'Unlimited Access', 'Available in All Rooms'],
     },
     {
         name: 'Free Parking',
-        image: '/images/park.jpg', // Update with your image path
+        image: '/images/park.jpg', 
         description: 'Secure and complimentary parking for all hotel guests.',
         features: ['24/7 Security', 'Valet Parking Available', 'Easy Access'],
     },
     {
         name: 'Room Service',
-        image: '/images/room.jpg', // Update with your image path
+        image: '/images/room.jpg', 
         description: 'Enjoy delicious meals and beverages delivered directly to your room, available 24/7.',
         features: ['In-Room Dining', 'Late-Night Menu', 'Special Dietary Options'],
     },
     {
         name: 'Swimming Pool',
-        image: '/images/pool.jpeg', // Update with your image path
+        image: '/images/pool.jpeg', 
         description: 'Relax and unwind in our outdoor swimming pool, perfect for a refreshing dip.',
         features: ['Sun Loungers', 'Pool Bar', 'Towels Provided'],
     },
     {
         name: 'Fitness Center',
-        image: '/images/fit.jpg', // Update with your image path
+        image: '/images/fit.jpg', 
         description: 'Stay active during your stay with access to our fully equipped fitness center.',
         features: ['Cardio Equipment', 'Weights', 'Personal Training Available'],
     },
     {
         name: 'Spa Services',
-        image: '/images/spa.jpg', // Update with your image path
+        image: '/images/spa.jpg', 
         description: 'Indulge in our relaxing spa services, including massages and beauty treatments.',
         features: ['Massage Therapy', 'Facials', 'Wellness Packages'],
     },
     {
         name: 'Concierge Service',
-        image: '/images/concierge.jpg', // Update with your image path
+        image: '/images/concierge.jpg',
         description: 'Our concierge team is here to assist with reservations, local tips, and transportation.',
         features: ['Tour Bookings', 'Restaurant Reservations', 'Transportation Arrangements'],
     },
     {
         name: 'Business Center',
-        image: '/images/busi.jpg', // Update with your image path
+        image: '/images/busi.jpg', 
         description: 'Access our business center equipped with computers, printers, and meeting rooms.',
         features: ['Free Printing', 'Meeting Room Reservations', 'High-Speed Internet'],
     },
