@@ -1,13 +1,13 @@
-// BookingPage.jsx
+
 import React from 'react';
 
 const BookingPage = () => {
     return (
         <div className="bg-[#F4F6FF] min-h-screen flex items-center justify-center p-6">
-            <form className="bg-white rounded-lg shadow-md p-4 w-full max-w-xl"> {/* Reduced padding */}
+            <form className="bg-white rounded-lg shadow-md p-4 w-full max-w-xl"> 
                 <h2 className="text-3xl font-bold text-[#10375C] mb-4 text-center">Booking Form</h2>
                 
-                <div className="mb-3"> {/* Reduced margin-bottom */}
+                <div className="mb-3"> 
                     <label className="block mb-1 text-[#10375C] text-lg" htmlFor="name">Name:</label>
                     <input
                         type="text"
@@ -17,7 +17,7 @@ const BookingPage = () => {
                     />
                 </div>
                 
-                <div className="mb-3"> {/* Reduced margin-bottom */}
+                <div className="mb-3"> 
                     <label className="block mb-1 text-[#10375C] text-lg" htmlFor="email">Email:</label>
                     <input
                         type="email"
@@ -27,7 +27,7 @@ const BookingPage = () => {
                     />
                 </div>
                 
-                <div className="mb-3"> {/* Reduced margin-bottom */}
+                <div className="mb-3">
                     <label className="block mb-1 text-[#10375C] text-lg" htmlFor="checkInDate">Checked-In Date:</label>
                     <input
                         type="date"
@@ -37,7 +37,7 @@ const BookingPage = () => {
                     />
                 </div>
                 
-                <div className="mb-3"> {/* Reduced margin-bottom */}
+                <div className="mb-3"> 
                     <label className="block mb-1 text-[#10375C] text-lg" htmlFor="checkOutDate">Checked-Out Date:</label>
                     <input
                         type="date"
@@ -47,7 +47,7 @@ const BookingPage = () => {
                     />
                 </div>
                 
-                <div className="mb-4"> {/* Kept margin-bottom the same for guests */}
+                <div className="mb-4"> 
                     <label className="block mb-2 text-[#10375C] text-lg" htmlFor="guests">Number of Guests:</label>
                     <input
                         type="number"
